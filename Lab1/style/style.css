@@ -10,7 +10,7 @@ body{
                        'nav text text'
                        'nav main aside'
                        'footer footer footer';
-  grid-template-rows: 150px 46px auto auto 150px;
+  grid-template-rows: 150px 46px auto 150px 0;
   grid-template-columns: 1fr 3fr 1fr;
   
 }
