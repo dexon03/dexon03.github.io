@@ -146,6 +146,7 @@ aside{
   display: flex;
   align-items: center; 
   text-align: right;
+  justify-content: right;
   background-color:aquamarine;
 }
 
