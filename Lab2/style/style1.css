@@ -52,12 +52,14 @@ h1{
 
 .main{
   display: flex;
-  height: 100%;
+
 
 }
 .main-content{
   display: flex;
   flex-direction: column;
+  height: 100%;
+
   
 }
 .container{
@@ -118,6 +120,7 @@ main{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 
 aside{
@@ -141,9 +144,8 @@ aside{
   border: 1px solid;
   border-left: 0;
   display: flex;
-  align-items: center;
-  grid-area: text;
-  justify-content: right;
+  align-items: center; 
+  text-align: right;
   background-color:aquamarine;
 }
 
