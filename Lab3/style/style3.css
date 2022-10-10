@@ -1,0 +1,180 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------- HEADER ----------- */
+
+.header-div{
+  padding: 20px;
+  background-color:aqua;
+  border: 1px solid;
+  border-bottom: 0;
+  margin: 0; 
+  
+}
+header{
+  height: 100%;
+  width: 100%; 
+  display: table;  
+}
+
+.right-header{
+ width: fit-content ;
+ vertical-align: middle;
+ text-align: right;
+ display: table-cell;
+ height: 100%; 
+ margin: auto;
+}
+
+
+.left-header{
+  display: table-cell;
+  height: fit-content;  
+  vertical-align: middle;
+}
+
+
+h1{
+  width: fit-content;
+  border: 1px solid;
+  padding: 5px;
+  padding-right: 5%;
+  text-align: left;
+  background-color: white;
+  /* float: left; */
+  
+}
+
+/* ----------- /HEADER ----------- */
+
+.content{
+  display: table;
+  height: 100%;
+  /* height: fit-content; */
+}
+.main-content{
+  display: table;
+  height: 100%;
+}
+nav{
+  width: 100%;
+  height:min-content;
+
+  
+}
+.navbar{
+  background-color: bisque;
+  border: 1px solid;
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px;
+  display: table-cell ;
+  height: fit-content;  
+  vertical-align: middle;
+  width: 15%;
+  
+}
+
+
+nav ol{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+nav li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  background-color:darkorange;
+  transition: 100ms;
+  border-bottom: 1px solid #873600;
+}
+nav li:hover{
+  padding-left: 10px;
+  background-color:chocolate ;
+}
+
+nav li a{
+  text-decoration: none;
+  color: bisque;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.container{
+  display: table;
+  height: 100%;
+}
+
+main{
+  padding: 5px;
+  display: table-cell;  
+  height: 100%;
+  vertical-align: middle;
+}
+
+aside{
+  width: 17%;
+  padding: 5px;
+  border: 1px solid;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: bisque;
+  display: table-cell;
+
+  vertical-align: middle;
+  height: fit-content;
+}
+
+
+.text{
+  border: 1px solid;
+  border-left: 0;
+  background-color:aquamarine;
+  text-align: right;
+  height: fit-content;
+}
+
+
+.footer-div{
+  padding: 20px;
+  background-color:aqua;
+  border: 1px solid;
+  margin: 0;
+  
+}
+footer{
+  height: 100%;
+  width: 100%; 
+  display: table;
+  vertical-align: middle;
+}
+
+.right-footer{
+  display: table-cell;
+  height: fit-content;  
+  vertical-align: middle;
+  direction: rtl;
+}
+.left-footer{
+  width: fit-content ;
+  vertical-align: middle;
+  text-align: left;
+  display: table-cell;
+  height: 100%; 
+  margin: auto;
+
+}
+
+
+
+
+
