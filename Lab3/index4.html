@@ -1,357 +1,276 @@
+<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-3U1NytKCJBSfy-7K0p1CfJ2J4TS0n_Atw&usqp=CAU 
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lab2</title>
-  <!-- <link rel="stylesheet" href="style/style1.css"> -->
-  <style>
-    html{
-  height: 100%;
-}
-
-body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-header{
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-
-.header-div{
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color:aqua;
-  border: 1px solid;
-  border-bottom: 0;
-  margin: 0;
-}
-
-.right-header{
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  text-align: right;
-}
-.right-header * {
-  padding: 2px;
-}
-h1{
-  width: fit-content;
-  border: 1px solid;
-  padding: 5px;
-  padding-right: 5%;
-  text-align: left;
-  background-color: white;
-}
-
-.main{
-  display: flex;
-  height: 100%;
-
-}
-.main-content{
-  display: flex;
-  flex-direction: column;
-  /* height: 100%; */
-
-  
-}
-.container{
-  display: flex;
-  height: 100%;
-}
-
-.navbar{
-  background-color: bisque;
-  min-width: 15%;
-  max-width: 15%;
-  border: 1px solid;
-  border-bottom: 0;
-  margin: 0;
-  padding: 5px;
-  display: flex;
-  align-content: center;
-  float: left;
-  flex-wrap: wrap;
-}
-
-nav{
-  width: 100%;
-}
-
-nav ol{
-  margin: 0;
-  padding: 0;
-}
-
-nav li{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 45px;
-  background-color:darkorange;
-  transition: 100ms;
-  border-bottom: 1px solid #873600;
-}
-
-nav li:hover{
-  padding-left: 10px;
-  background-color:chocolate ;
-}
-
-nav li a{
-  text-decoration: none;
-  color: bisque;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-main{
-  min-width: 48%;
-  padding: 5px;
-  float: left;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* aside{
-  min-width: 17%;
-  max-width: 17%;
-  height: 100%;
-  height: fit-content;
-  padding: 5px;
-  border: 1px solid;
-  border-bottom: 0;
-  border-top: 0;
-  background-color: bisque;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-} */
-/* aside {
-    min-width: 17%;
-    max-width: 17%;
-    padding: 5px;
-    border: 1px solid;
-    border-bottom: 0;
-    border-top: 0;
-    background-color: bisque;
-    display: table;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    height: fit-content;
-    min-height: 100%;
-    
-} */
-aside{
-  min-width: 17%;
-  max-width: 17%;
-  padding: 5px;
-  border: 1px solid;
-  border-bottom: 0;
-  border-top: 0;
-  background-color: bisque;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.text{
-  /* min-height: 10%; */
-  height: fit-content;
-  border: 1px solid;
-  border-left: 0;
-  display: flex;
-  align-items: center; 
-  text-align: right;
-  justify-content: right;
-  background-color:aquamarine;
-}
-
-
-.footer-div{
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color:aqua;
-  border: 1px solid;
-  margin: 0;
-  
-  
-}
-footer{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-
-.left-footer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.left-footer *{
-  padding: 2px;
-}
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<body style="height: 100%;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;">
-  <!---------------- header ---------------->
-  <div class="header-div" style="display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color:aqua;
-  border: 1px solid;
-  border-bottom: 0;
-  margin: 0;">
-    <header style="height: fit-content;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;">
-      <h1 style="width: fit-content;
+<body>
+  <style type="text/css">
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    thead{
+      background-color: aqua;
+      width: 100%;
+      border: 1px black solid;
+    }
+    .footer-content{
+      background-color: aqua;
+      width: 100%;
+      border: 1px black solid;
+    }
+    h1{
+      width: fit-content;
       border: 1px solid;
       padding: 5px;
       padding-right: 5%;
       text-align: left;
-      background-color: white;">Header</h1>      
-      <div class="right-header" style="display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      text-align: right;">        
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-      </div>
-    </header>
-  </div>
-  <!---------------- /header ---------------->
-
-  <!---------------- main ------------------->
-  <div class="main" style="display: flex;
-  height: 100%;">
-
-    <div class="navbar" style="background-color: bisque;
-    min-width: 15%;
-    max-width: 15%;
-    border: 1px solid;
-    border-bottom: 0;
-    margin: 0;
-    padding: 5px;
-    display: flex;
-    align-content: center;
-    float: left;
-    flex-wrap: wrap;">      
-      <nav style="width: 100%;">
-        <ol style="margin: 0;
-        padding: 0;">
-          <li><a href="index.html">Link1</a></li>
-          <li><a href="index1.html">Link2</a></li>
-          <li><a href="index2.html">Link3</a></li>
-          <li><a href="index3.html">Link4</a></li>
-          <li><a href="index4.html">Link5</a></li>
-        </ol>
-      </nav>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dicta praesentium animi dignissimos vel? Neque molestias quo architecto perferendis a dicta facilis vel laborum quas molestiae, vitae, cupiditate inventore! Eaque.</p> 
-    </div> 
-    <div class="main-content">
-      <div class="text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>
-      <div class="container">
-        <main>
+      background-color: white;
+      float: left;
+    }
+    .right-header{
+      text-align: right;
+      padding: 5px;
+      
+    }
+    .right-header *{
+      width: 30%;
+      float: right;
+    }
+    .left-header{
+      padding: 5px;
+    }
+    .left-footer{
+      width: 15%;
+      text-align: left;
+      padding: 5px;
+    }
+    .right-footer{
+      padding:5px ;
+    }
+    .right-footer *{
+      float: right;
+      text-align: right;
+    }
+    .nav-content{
+      background-color: bisque;
+      height: 100%;
+      border: 1px black solid;
+      margin: 0;
+      padding: 0;
+    }
+    nav ol{
+      margin: 0;
+      padding: 0;
+    }
+    nav li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 45px;
+      background-color:darkorange;
+      transition: 100ms;
+      border-bottom: 1px solid #873600;
+    }
+    nav li a{
+      text-decoration: none;
+      color: bisque;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+    .text{
+      width: 100%;
+      border: 1px solid;
+      border-top: 0;
+      border-left: 0;
+      background-color:aquamarine;
+      text-align: right;
+    }
+    
+    .main{
+      padding: 5px;
+      text-align: left;
+    }
+    .aside{
+      width: 17%;
+      border-left: 1px black solid;
+      padding: 5px;
+      background-color: bisque;
+    }
+  </style>
+    <table style="height: 100%; width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr class="header-content">
+        <td class="left-header">
+          <h1>Header</h1>
+        </td>
+        <td class="right-header">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit blanditiis eum ipsa sed similique aperiam voluptatibus iure, adipisci soluta beatae ratione nulla excepturi aut molestias. Officiis quo assumenda dignissimos.</p>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td class="nav-content">
+          <nav>
+            <ol>
+              <li><a href="#">Link1</a></li>
+              <li><a href="#">Link2</a></li>
+              <li><a href="#">Link3</a></li>
+              <li><a href="#">Link4</a></li>
+              <li><a href="#">Link5</a></li>
+            </ol>
+          </nav>
+        </td>
+        <td style="padding: 0;">
+          <table style="height: 100%; width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+            <tr class="text">
+              <td >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ex quae laudantium eos, autem sequi placeat, cupiditate nemo, delectus accusamus beatae incidunt ea vero quisquam voluptate! Eligendi saepe nam soluta!</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0;"">
+                <table style="height: 100%; width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+                  <tr>
+                    <td class="main">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt provident optio velit dolorum ullam odit exercitationem blanditiis reiciendis, sint, corrupti cumque asperiores quasi, consequatur praesentium ducimus ratione minima distinctio harum.
+                        Unde incidunt expedita dicta soluta optio consequatur doloremque aspernatur. Incidunt eaque, repellendus sapiente dolorum asperiores assumenda in eveniet quam omnis autem ipsam optio quis voluptates deserunt tempora totam odit voluptas.
+                        Exercitationem praesentium repellendus sed ullam unde neque quo et, dicta assumenda repudiandae ratione tenetur at aperiam ut nulla maiores cum tempora vero sequi ipsa! Odit officia consequatur culpa id cumque.
+                        Asperiores explicabo natus dicta. Temporibus ex earum, sunt necessitatibus animi quos tempore ea quia dolorum incidunt similique nesciunt enim recusandae officia deserunt voluptas reiciendis dolores! Voluptatibus ut consequatur necessitatibus facilis.
+                        Totam nostrum voluptatum sit velit! Maiores quaerat eos eveniet ipsum numquam soluta, architecto libero, reiciendis dolorum officia adipisci fugiat quia repellat eligendi corrupti similique voluptas error autem minus aspernatur quos!
+                        Officiis, sit. Asperiores dicta labore tempore obcaecati nulla voluptates aliquid sed! Doloribus deserunt possimus minima magni cupiditate est fugit aut, porro ab consequuntur temporibus eos debitis, neque praesentium voluptate fuga.
+                        Tempora nam, harum magni accusamus saepe at natus maiores assumenda repellat molestias unde facilis consequatur ut laboriosam aliquam repellendus maxime enim veniam adipisci officiis cumque id quasi, voluptatem velit. Aperiam?
+                        Ex neque ullam maxime, qui necessitatibus consequuntur, harum ea sapiente sequi quia doloremque. Libero nostrum suscipit inventore cumque natus, similique quaerat voluptates accusamus iusto, adipisci aperiam? Fuga eos expedita recusandae.
+                        Tempore quisquam dolorem eligendi obcaecati vero dicta suscipit, ad iusto quam repellendus cum expedita eum doloribus perferendis, a cupiditate, facere esse eveniet? Assumenda unde cumque consectetur saepe voluptates error sed.
+                        Quia, voluptatem, tempora quam eligendi velit deserunt cum debitis ad eveniet doloribus aliquam quibusdam perspiciatis, pariatur fugit earum officia? Obcaecati enim, qui eos labore tempore id quos ipsam ratione magni!
+                        Repudiandae aliquid eius beatae architecto libero. Nemo facere tempora labore aliquid quaerat at quia, impedit doloremque, suscipit quae nisi molestias corporis, voluptatibus iste a ex. Sed quisquam deserunt blanditiis quos.
+                        Omnis reprehenderit id accusantium quisquam laudantium eligendi, aliquam error. Quidem architecto laudantium qui sed eaque expedita perferendis nostrum voluptates, omnis, inventore maxime nam excepturi, aut mollitia esse cum blanditiis temporibus?
+                        Labore architecto reprehenderit repellendus velit obcaecati aperiam deserunt minus adipisci vitae quaerat, ipsam quos nulla mollitia laborum sed, voluptates natus rem perferendis accusantium quisquam vero, illum reiciendis quibusdam? Adipisci, eos?
+                        Facilis porro asperiores voluptatem odit voluptates suscipit magni aliquid et aperiam perferendis. Nisi aliquam quod officia, cupiditate mollitia fuga quaerat cum eum esse vitae soluta temporibus in qui accusamus eaque.
+                        Dolor sunt corporis aperiam ducimus a doloribus esse, eaque harum aliquam sit omnis molestiae? Laudantium suscipit consectetur error? Dolorum molestias iusto sed quasi aut asperiores, hic optio commodi soluta veniam.</p>                       
+                      </td>
+                    <td class="aside">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-3U1NytKCJBSfy-7K0p1CfJ2J4TS0n_Atw&usqp=CAU" usemap='#map' alt="img" width="100%"/>
+                        <map name="map">
+                          <area shape="rect" coords="0,0,200,200" href="#" alt="">
+                        </map>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="footer-content"> 
+        <td class="left-footer">   
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit blanditiis eum ipsa sed similique aperiam voluptatibus iure, adipisci soluta beatae ratione nulla excepturi aut molestias. Officiis quo assumenda dignissimos.</p>
+        </td>
+        <td class="right-footer">
           
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet ex doloremque consectetur dolores animi quasi, minima doloribus debitis reprehenderit pariatur temporibus dicta deserunt maiores quam non explicabo ullam voluptas.
-          Earum dolorum consectetur tenetur corrupti reprehenderit provident. Hic debitis ipsam dolores vero voluptatum cumque? Voluptatibus recusandae eum quod eos, at, quaerat perferendis nobis quis aut, error explicabo cupiditate temporibus laudantium.
-          Temporibus ipsam sed, ratione numquam aspernatur dolore corrupti aut quae quisquam veniam tenetur praesentium. Consequatur odit aliquid vitae, assumenda nesciunt vero sequi deserunt, blanditiis cumque debitis dolorem animi iusto aspernatur?
-          Odit quasi necessitatibus cupiditate nemo, eaque minus consequatur voluptatibus cumque temporibus quo perferendis non numquam quam aliquid atque velit eligendi laboriosam sapiente minima quos eos saepe adipisci ratione. Molestiae, consectetur?
-          Ut architecto porro fuga necessitatibus maiores aliquid. Quis excepturi, quas facilis nisi ab aliquid distinctio itaque aut delectus nostrum doloremque, ullam accusantium eum iusto voluptatem sed dicta possimus minus exercitationem.
-          Debitis, inventore assumenda? Perferendis hic obcaecati ipsam sint porro numquam nostrum earum veritatis exercitationem alias autem necessitatibus rem, ex quia quisquam assumenda ad id. Magni sapiente nemo eum cum deserunt.
-          Odit nihil, voluptatum est, suscipit at vitae, odio inventore enim natus quidem illo? Inventore fugiat ex facere praesentium rem omnis, explicabo accusantium saepe eveniet iure soluta repellendus doloremque odit error.
-          Nemo dolore voluptatum fugiat! Quas nisi laudantium quibusdam delectus mollitia libero eveniet soluta nemo fugiat nihil, nam iste cum voluptatibus, autem praesentium expedita quos temporibus! Tempora perferendis animi similique laboriosam.
-          Ab aut magni quae quibusdam optio accusantium deserunt molestiae et earum quidem iste quasi architecto ad corrupti mollitia, aliquid est dolorem quo non voluptatem ipsa veniam eaque illo? Illum, accusantium?
-          Mollitia iusto velit repellendus nesciunt eos sequi hic nisi molestias modi aliquid, repudiandae, eveniet magnam! Pariatur, dolorum nam harum dignissimos expedita temporibus quod delectus maxime magni, corporis unde aliquam incidunt?
-          Totam, consequatur eveniet? Sed aperiam commodi animi dolores exercitationem recusandae maxime, impedit hic quisquam nobis asperiores iure quidem deleniti, nam minus amet cum vel consectetur rem minima odio soluta in?
-          Repellendus ducimus nihil dolore repudiandae amet. Similique facere vel optio harum labore obcaecati sequi? Iure consectetur pariatur voluptates velit aut doloribus earum totam, ex unde iste. Eveniet veritatis fugit impedit?
-          Ipsa nisi maiores suscipit voluptate est aliquam accusantium delectus praesentium consequatur nobis animi culpa provident obcaecati dolores magnam ab unde reprehenderit, nulla a nihil sit perferendis sapiente. Iste, facere repellendus?
-          Aliquid voluptatem provident tempora quas, dignissimos eligendi animi non debitis vel corporis accusantium nobis est quaerat, temporibus exercitationem? Voluptates illo ea velit ipsum nobis culpa praesentium perspiciatis exercitationem a unde.
-          Minima veniam nam voluptatum accusantium officia dolorem neque vitae accusamus doloribus quia aut, laboriosam assumenda consectetur magni iusto quos porro tempora dolorum a qui illum? Maiores deleniti laborum assumenda ipsa!
-          Doloremque vel facilis ex expedita quod corrupti tempora consequuntur ducimus aut reprehenderit accusantium recusandae praesentium eveniet quo sequi iste, nostrum maxime optio assumenda impedit fugit eos tempore ad? Incidunt, voluptatum.
-          Quis sunt quia cum eaque nihil obcaecati eius architecto suscipit incidunt amet dolores pariatur labore culpa aut ab omnis atque consectetur dignissimos quasi quae eum, earum animi. Culpa, eligendi aspernatur?
-          Facilis ullam saepe deleniti tempore nisi neque ducimus a sapiente, optio quaerat quo fugiat ratione eos? Libero consectetur eaque nemo saepe quae autem id magnam quasi, optio, voluptatem, temporibus possimus.
-          Sint aliquid laboriosam dolore recusandae natus alias atque, quis corporis animi aspernatur quae ab vel libero repellendus voluptate quod porro iste eos aut? Fugiat ratione, ex nostrum beatae harum laboriosam!
-          Maiores libero inventore recusandae exercitationem unde at iste natus doloremque! Magnam dignissimos dolores recusandae laudantium, quasi ad corrupti quis delectus dolore facere atque. Vel error ex non aut in nostrum!        
-         </p> 
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet ex doloremque consectetur dolores animi quasi, minima doloribus debitis reprehenderit pariatur temporibus dicta deserunt maiores quam non explicabo ullam voluptas.
-          Earum dolorum consectetur tenetur corrupti reprehenderit provident. Hic debitis ipsam dolores vero voluptatum cumque? Voluptatibus recusandae eum quod eos, at, quaerat perferendis nobis quis aut, error explicabo cupiditate temporibus laudantium.
-          Temporibus ipsam sed, ratione numquam aspernatur dolore corrupti aut quae quisquam veniam tenetur praesentium. Consequatur odit aliquid vitae, assumenda nesciunt vero sequi deserunt, blanditiis cumque debitis dolorem animi iusto aspernatur?
-          Odit quasi necessitatibus cupiditate nemo, eaque minus consequatur voluptatibus cumque temporibus quo perferendis non numquam quam aliquid atque velit eligendi laboriosam sapiente minima quos eos saepe adipisci ratione. Molestiae, consectetur?
-          Ut architecto porro fuga necessitatibus maiores aliquid. Quis excepturi, quas facilis nisi ab aliquid distinctio itaque aut delectus nostrum doloremque, ullam accusantium eum iusto voluptatem sed dicta possimus minus exercitationem.
-          Debitis, inventore assumenda? Perferendis hic obcaecati ipsam sint porro numquam nostrum earum veritatis exercitationem alias autem necessitatibus rem, ex quia quisquam assumenda ad id. Magni sapiente nemo eum cum deserunt.
-          Odit nihil, voluptatum est, suscipit at vitae, odio inventore enim natus quidem illo? Inventore fugiat ex facere praesentium rem omnis, explicabo accusantium saepe eveniet iure soluta repellendus doloremque odit error.
-          Nemo dolore voluptatum fugiat! Quas nisi laudantium quibusdam delectus mollitia libero eveniet soluta nemo fugiat nihil, nam iste cum voluptatibus, autem praesentium expedita quos temporibus! Tempora perferendis animi similique laboriosam.
-          Ab aut magni quae quibusdam optio accusantium deserunt molestiae et earum quidem iste quasi architecto ad corrupti mollitia, aliquid est dolorem quo non voluptatem ipsa veniam eaque illo? Illum, accusantium?
-          Mollitia iusto velit repellendus nesciunt eos sequi hic nisi molestias modi aliquid, repudiandae, eveniet magnam! Pariatur, dolorum nam harum dignissimos expedita temporibus quod delectus maxime magni, corporis unde aliquam incidunt?
-          Totam, consequatur eveniet? Sed aperiam commodi animi dolores exercitationem recusandae maxime, impedit hic quisquam nobis asperiores iure quidem deleniti, nam minus amet cum vel consectetur rem minima odio soluta in?
-          Repellendus ducimus nihil dolore repudiandae amet. Similique facere vel optio harum labore obcaecati sequi? Iure consectetur pariatur voluptates velit aut doloribus earum totam, ex unde iste. Eveniet veritatis fugit impedit?
-          Ipsa nisi maiores suscipit voluptate est aliquam accusantium delectus praesentium consequatur nobis animi culpa provident obcaecati dolores magnam ab unde reprehenderit, nulla a nihil sit perferendis sapiente. Iste, facere repellendus?
-          Aliquid voluptatem provident tempora quas, dignissimos eligendi animi non debitis vel corporis accusantium nobis est quaerat, temporibus exercitationem? Voluptates illo ea velit ipsum nobis culpa praesentium perspiciatis exercitationem a unde.
-          Minima veniam nam voluptatum accusantium officia dolorem neque vitae accusamus doloribus quia aut, laboriosam assumenda consectetur magni iusto quos porro tempora dolorum a qui illum? Maiores deleniti laborum assumenda ipsa!
-          Doloremque vel facilis ex expedita quod corrupti tempora consequuntur ducimus aut reprehenderit accusantium recusandae praesentium eveniet quo sequi iste, nostrum maxime optio assumenda impedit fugit eos tempore ad? Incidunt, voluptatum.
-          Quis sunt quia cum eaque nihil obcaecati eius architecto suscipit incidunt amet dolores pariatur labore culpa aut ab omnis atque consectetur dignissimos quasi quae eum, earum animi. Culpa, eligendi aspernatur?
-          Facilis ullam saepe deleniti tempore nisi neque ducimus a sapiente, optio quaerat quo fugiat ratione eos? Libero consectetur eaque nemo saepe quae autem id magnam quasi, optio, voluptatem, temporibus possimus.
-          Sint aliquid laboriosam dolore recusandae natus alias atque, quis corporis animi aspernatur quae ab vel libero repellendus voluptate quod porro iste eos aut? Fugiat ratione, ex nostrum beatae harum laboriosam!
-          Maiores libero inventore recusandae exercitationem unde at iste natus doloremque! Magnam dignissimos dolores recusandae laudantium, quasi ad corrupti quis delectus dolore facere atque. Vel error ex non aut in nostrum!        
-         </p> 
-         
-           
-        </main>
-        <aside>
-          <div class="image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-3U1NytKCJBSfy-7K0p1CfJ2J4TS0n_Atw&usqp=CAU" usemap='#map' alt="img" width="100%"/>
-            <map name="map">
-              <area shape="rect" coords="0,0,200,200" href="index.html" alt="">
-            </map>
-          </div>               
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, id. Vel laudantium nulla, pariatur illum error quibusdam? Perspiciatis velit, id deserunt reiciendis quis beatae explicabo debitis quo, et, veniam earum?</p>
-        </aside>
-      </div>
-    </div> 
-  </div>
-  <!---------------- /main ----------------->
-
-  <!---------------- footer ---------------->
-  <div class="footer-div">
-    <footer>
-      <div class="left-footer">
-        <p>ipsum dolor sit amet, consectetur adipisicing elit.</p> 
-       </div>  
-      <h1>Footer</h1>
-    </footer>
-  </div>
-  <!---------------- /footer ---------------->
+          <h1>Footer</h1>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</body>
+</html> -->
+<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-3U1NytKCJBSfy-7K0p1CfJ2J4TS0n_Atw&usqp=CAU --> 
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="height: 100%; margin: 0; padding: 0;">
+  
+    <table style="height: 100%; width: 100%; border-collapse: collapse;">
+    <thead style="background-color: aqua; width: 100%; border: 1px black solid;" bgcolor="aqua">
+      <tr class="header-content">
+        <td class="left-header" style="padding: 5px;">
+          <h1 style="width: fit-content; border: 1px solid; padding: 5px; padding-right: 5%; text-align: left; background-color: white; float: left;">Header</h1>
+        </td>
+        <td class="right-header" style="text-align: right; padding: 5px;" align="right">
+          <p style="width: 30%; float: right;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit blanditiis eum ipsa sed similique aperiam voluptatibus iure, adipisci soluta beatae ratione nulla excepturi aut molestias. Officiis quo assumenda dignissimos.</p>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="nav-content" style="background-color: bisque; height: 100%; border: 1px black solid; margin: 0; padding: 0;" height="100%" bgcolor="bisque">
+          <nav>
+            <ol style="margin: 0; padding: 0;">
+              <li style="list-style: none; margin: 0; padding: 0; height: 45px; background-color: darkorange; transition: 100ms; border-bottom: 1px solid #873600;"><a href="#" style="text-decoration: none; color: bisque; width: 100%; height: 100%; padding: 10px;">Link1</a></li>
+              <li style="list-style: none; margin: 0; padding: 0; height: 45px; background-color: darkorange; transition: 100ms; border-bottom: 1px solid #873600;"><a href="#" style="text-decoration: none; color: bisque; width: 100%; height: 100%; padding: 10px;">Link2</a></li>
+              <li style="list-style: none; margin: 0; padding: 0; height: 45px; background-color: darkorange; transition: 100ms; border-bottom: 1px solid #873600;"><a href="#" style="text-decoration: none; color: bisque; width: 100%; height: 100%; padding: 10px;">Link3</a></li>
+              <li style="list-style: none; margin: 0; padding: 0; height: 45px; background-color: darkorange; transition: 100ms; border-bottom: 1px solid #873600;"><a href="#" style="text-decoration: none; color: bisque; width: 100%; height: 100%; padding: 10px;">Link4</a></li>
+              <li style="list-style: none; margin: 0; padding: 0; height: 45px; background-color: darkorange; transition: 100ms; border-bottom: 1px solid #873600;"><a href="#" style="text-decoration: none; color: bisque; width: 100%; height: 100%; padding: 10px;">Link5</a></li>
+            </ol>
+          </nav>
+        </td>
+        <td style="padding: 0;">
+          <table style="height: 100%; width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+            <tr class="text" style="width: 100%; border: 1px solid; border-top: 0; border-left: 0; background-color: aquamarine; text-align: right;" bgcolor="aquamarine" align="right">
+              <td>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ex quae laudantium eos, autem sequi placeat, cupiditate nemo, delectus accusamus beatae incidunt ea vero quisquam voluptate! Eligendi saepe nam soluta!</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0;" "="">
+                <table style="height: 100%; width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+                  <tr>
+                    <td class="main" style="padding: 5px; text-align: left;" align="left">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt provident optio velit dolorum ullam odit exercitationem blanditiis reiciendis, sint, corrupti cumque asperiores quasi, consequatur praesentium ducimus ratione minima distinctio harum.
+                        Unde incidunt expedita dicta soluta optio consequatur doloremque aspernatur. Incidunt eaque, repellendus sapiente dolorum asperiores assumenda in eveniet quam omnis autem ipsam optio quis voluptates deserunt tempora totam odit voluptas.
+                        Exercitationem praesentium repellendus sed ullam unde neque quo et, dicta assumenda repudiandae ratione tenetur at aperiam ut nulla maiores cum tempora vero sequi ipsa! Odit officia consequatur culpa id cumque.
+                        Asperiores explicabo natus dicta. Temporibus ex earum, sunt necessitatibus animi quos tempore ea quia dolorum incidunt similique nesciunt enim recusandae officia deserunt voluptas reiciendis dolores! Voluptatibus ut consequatur necessitatibus facilis.
+                        Totam nostrum voluptatum sit velit! Maiores quaerat eos eveniet ipsum numquam soluta, architecto libero, reiciendis dolorum officia adipisci fugiat quia repellat eligendi corrupti similique voluptas error autem minus aspernatur quos!
+                        Officiis, sit. Asperiores dicta labore tempore obcaecati nulla voluptates aliquid sed! Doloribus deserunt possimus minima magni cupiditate est fugit aut, porro ab consequuntur temporibus eos debitis, neque praesentium voluptate fuga.
+                        Tempora nam, harum magni accusamus saepe at natus maiores assumenda repellat molestias unde facilis consequatur ut laboriosam aliquam repellendus maxime enim veniam adipisci officiis cumque id quasi, voluptatem velit. Aperiam?
+                        Ex neque ullam maxime, qui necessitatibus consequuntur, harum ea sapiente sequi quia doloremque. Libero nostrum suscipit inventore cumque natus, similique quaerat voluptates accusamus iusto, adipisci aperiam? Fuga eos expedita recusandae.
+                        Tempore quisquam dolorem eligendi obcaecati vero dicta suscipit, ad iusto quam repellendus cum expedita eum doloribus perferendis, a cupiditate, facere esse eveniet? Assumenda unde cumque consectetur saepe voluptates error sed.
+                        Quia, voluptatem, tempora quam eligendi velit deserunt cum debitis ad eveniet doloribus aliquam quibusdam perspiciatis, pariatur fugit earum officia? Obcaecati enim, qui eos labore tempore id quos ipsam ratione magni!
+                        Repudiandae aliquid eius beatae architecto libero. Nemo facere tempora labore aliquid quaerat at quia, impedit doloremque, suscipit quae nisi molestias corporis, voluptatibus iste a ex. Sed quisquam deserunt blanditiis quos.
+                        Omnis reprehenderit id accusantium quisquam laudantium eligendi, aliquam error. Quidem architecto laudantium qui sed eaque expedita perferendis nostrum voluptates, omnis, inventore maxime nam excepturi, aut mollitia esse cum blanditiis temporibus?
+                        Labore architecto reprehenderit repellendus velit obcaecati aperiam deserunt minus adipisci vitae quaerat, ipsam quos nulla mollitia laborum sed, voluptates natus rem perferendis accusantium quisquam vero, illum reiciendis quibusdam? Adipisci, eos?
+                        Facilis porro asperiores voluptatem odit voluptates suscipit magni aliquid et aperiam perferendis. Nisi aliquam quod officia, cupiditate mollitia fuga quaerat cum eum esse vitae soluta temporibus in qui accusamus eaque.
+                        Dolor sunt corporis aperiam ducimus a doloribus esse, eaque harum aliquam sit omnis molestiae? Laudantium suscipit consectetur error? Dolorum molestias iusto sed quasi aut asperiores, hic optio commodi soluta veniam.</p>                       
+                      </td>
+                    <td class="aside" style="width: 17%; border-left: 1px black solid; padding: 5px; background-color: bisque;" width="17%" bgcolor="bisque">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-3U1NytKCJBSfy-7K0p1CfJ2J4TS0n_Atw&usqp=CAU" usemap="#map" alt="img" width="100%">
+                        <map name="map">
+                          <area shape="rect" coords="0,0,200,200" href="#" alt="">
+                        </map>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="footer-content" style="background-color: aqua; width: 100%; border: 1px black solid;" bgcolor="aqua"> 
+        <td class="left-footer" style="width: 15%; text-align: left; padding: 5px;" width="15%" align="left">   
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit blanditiis eum ipsa sed similique aperiam voluptatibus iure, adipisci soluta beatae ratione nulla excepturi aut molestias. Officiis quo assumenda dignissimos.</p>
+        </td>
+        <td class="right-footer" style="padding: 5px;">
+          
+          <h1 style="width: fit-content; border: 1px solid; padding: 5px; padding-right: 5%; background-color: white; text-align: right; float: right;">Footer</h1>
+        </td>
+      </tr>
+    </tbody>
+    </table>
 </body>
 </html>
