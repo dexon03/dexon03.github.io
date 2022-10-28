@@ -144,7 +144,7 @@ footer{
 #checkbox_header:checked ~ .header_ol li{
   display: block;
 }
-@media only screen and (max-device-width:1024px){
+@media all and (max-device-width:1024px){
   html{
     min-height: 100%;
     height: auto ;
