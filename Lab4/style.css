@@ -1,0 +1,203 @@
+html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url('img/man-painting-yellow-wall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  /* background-position: center; */
+}
+header{
+  background-color: white;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20%;
+}
+input {
+  height: 2em;
+  padding: 6px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 17px;
+} 
+.menu_header{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.checkbox_header{
+  display: none;
+  cursor: pointer;
+}
+
+
+.header_ol{
+  display: flex;
+  margin: 0;
+  margin-right: 1em;
+  width: 100%;
+}
+.header_ol li {
+  display: none;
+}
+.header_ol li a{
+  color: black;
+  /* display: none; */
+}
+li{
+  list-style: none;
+  margin-right: 2em
+}
+li a{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content{
+  width: 50%;
+  
+}
+.content p{
+  font-family: 'Noto Sans Wancho', sans-serif;
+  color: rgb(75, 75, 75);
+}
+
+h1{
+  font-size: 4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.cards{
+  display: flex;
+}
+
+.card{
+  background-color: white;
+  padding: 2%;
+  margin-right: 1em; 
+}
+
+.card_title{
+  color: orange;
+  font-family: 'Roboto Slab', serif;
+}
+.card *{
+  width: 100%;
+}
+.card p{
+  color: gray;
+}
+
+.navIconOpen_footer{
+  display: none;
+}
+footer{
+  background-color: rgb(49, 49, 49);
+  border-top: 1px solid grey;
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  padding: 1rem 20%; 
+  align-items: center;
+
+}
+.checkbox_footer{
+  display: none;
+}
+.logo{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
+.menu_footer{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer_ol{
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+    
+}
+.footer_ol li a{
+  color: white;
+}
+
+#checkbox_header:checked ~ .header_ol li{
+  display: block;
+}
+@media only screen and (max-device-width:1024px){
+  html{
+    min-height: 100%;
+    height: auto ;
+  }
+  header{
+    flex-direction: column;
+  }
+  footer{
+    padding: 1rem 10%;
+  }
+  header * {
+    margin: .2em;
+  }
+  .menu_header{
+    flex-direction: column;
+  }
+  .header_ol{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .content{
+    width: 100%;
+  }
+  .container{
+    margin: 0 10%;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    margin: 1em 0;
+  }
+  .menu_footer{
+    width: 55%;
+    justify-content: space-between;
+  }
+  .navIconOpen_footer{
+    display: block;
+  }
+  .footer_ol{
+    display: none;
+  }
+  .footer_ol li{
+    margin: 1em;
+  }
+  /* .footer_ol{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  } */
+  .checkbox_footer:checked ~ .footer_ol{
+    display: block;
+  } 
+}
+
