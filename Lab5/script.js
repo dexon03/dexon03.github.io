@@ -16,24 +16,22 @@ TaskTwo()
 function TaskThree(){
   let cookie = document.cookie;
   if(!(cookie === 'undefined')){
-    let conf = confirm(`Wanna save cookie ${cookie}?`)
-    if(conf){
-      
-      let confReload = confirm('Wanna reload page with existing cookies?');
-      if(confReload){
+    if(confirm(`Wanna save cookie ${cookie}?`)){
+      if(confirm('Wanna reload page with existing cookies?')){
         location.reload();
       }
       else{
-        document.getElementById('formThree').style = 'display:none;';
+        document.getElementById('formThree').style = "display:none;";
       }
-    }
+    } 
     else{
-      document.cookie = 'undefined';
+      document.cookie = undefined;
       location.reload();
     }
   }
     
-  document.getElementById('numssubmit').addEventListener('click', () => {
+  document.getElementById('numssubmit').addEventListener("click", (evt) => {
+    evt.preventDefault();
     let values = [];
     let nums = document.getElementById('nums').value;
     if(nums.length!=0){
@@ -49,14 +47,15 @@ function TaskThree(){
       })
       let result = [min,max];
       document.cookie = result;
-    }else{
+    }
+    else{
       alert('Введіть числа через кому')
     }
     
   })
 }
 TaskThree();
-  
+
 function TaskFourOnCheck(check){
   // alert('hello world');
   if(check.value == 'default'){
@@ -98,7 +97,55 @@ function TaskFour(){
     list.forEach(element => {
       element.style = 'font-weight:1000';
     })
-    document.getElementById('extra-bold').checked = true;
+    document.getElementById('extra-bold ').checked = true;
   }
 }
 TaskFour()
+
+let usedBlock = "";
+let textInBlock = "";
+function TaskFive(){
+  const img1 = document.querySelectorAll('.img5');
+
+  img1.forEach(ele => {
+    const form = ele.closest('div').querySelector('.hiddenform');
+
+    ele.addEventListener('mouseover', () => {
+      ele.style.display = "none";
+      form.style.display = "block";
+    });
+
+    const sbmtbtn = ele.closest('div').querySelector('.submit');
+
+    sbmtbtn.addEventListener("click", () => {
+      form.style.display = "none";
+      ele.style.display = "block"; 
+
+      usedBlock += ele.closest("div").classList[0].toString() + "\n";
+      let area = ele.closest("div").querySelector(".input");
+      textInBlock += area.value + "\n";
+      area.value = "";
+      localStorage.setItem("listText",textInBlock);
+      localStorage.setItem("lastBlock", usedBlock);
+    })
+  });
+  window.addEventListener("load", function () {
+    if (localStorage.getItem("listText")) {
+        let list = localStorage.getItem("listText").split("\n");
+        list.pop();
+        let block = localStorage.getItem("lastBlock").split("\n");
+        block.pop();
+        for(let i = 0; i < block.length; i++){
+          let text = "<table>";
+          list[i].split("\n").forEach((element) => {
+              text += `<tr><td>${element}</td></tr>`;
+          });
+          text += "</table>";
+          document.querySelector(`.${block[i]}`).innerHTML += text;
+        }
+        localStorage.setItem("listText", "");
+        localStorage.setItem("lastBlock", "");
+    }
+  });
+}
+TaskFive();
